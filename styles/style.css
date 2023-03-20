@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #191919;
+    height: 100vh;
+}
+
+/* Header */
+
+.header {
+    background-color: #fdbb2e;
+    height: 100vh;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.menu__item a:hover {
+    font-size: 1.2rem;
+}
+
+/* Container header */
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header__container img {
+    border-radius: 999px;
+    border: #191919 4px solid;
+    width: 75%;
+}
+
+.header__container div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header__container h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__container p {
+    font-weight: 500;
+}
+
+.header__container a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: #191919;
+    color: #FFF;
+}
+
+/* Botão mais sobre mim */
+
+.moreaboutme__button {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 30% 12px 30%;
+    text-align: center;
+}
+
+.moreaboutme__button a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.moreaboutme__button img {
+    width: 30px;
+    height: auto;
+}
+
+.moreaboutme__button p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Sobre mim */
+#aboutme {
+    text-align: center;
+    gap: 0.5rem;
+    padding: 5px;
+    padding-top: 100px;
+}
+
+.title {
+    padding: 1px 5px;
+    font-size: 0.85rem;
+    background-color: #fdbb2e;
+    width: 100px;
+}
+
+#aboutme h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px 0 35px 0;
+}
+
+#aboutme h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+#aboutme h2 span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0px;
+    text-decoration: underline #fdbb2e 3px;
+    background-color: #FFF;
+}
+
+#aboutme p {
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+.aboutme__resume {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info {
+    margin-top: 25px;
+    display: grid;
+    gap: 0.8rem;
+    grid-template-areas: 
+        "name name"
+        "phone bday"
+        "email email"
+}
+
+.info h3 {
+    text-decoration: underline #fdbb2e 3px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.info .name {
+    grid-area: name;
+}
+
+.info .phone {
+    grid-area: phone;
+}
+
+.info .bday {
+    grid-area: bday;
+}
+
+.info .email {
+    grid-area: email;
+}
+
+.socialnetwork {
+    grid-area: snw;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.socialnetwork svg {
+    width: 48px;
+    height: 48px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #191919;
+    transition: .5s;
+}
+
+.socialnetwork svg:hover {
+    width: 52px;
+    height: 52px;
+}
+
+/* O que eu faço  */
+
+#whatido {
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+#whatido > h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px 0 35px 0;
+}
+
+.whatido__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.whatido__content div {
+    max-width: 475px;
+    padding: 20px;
+}
+
+.whatido__content h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.whatido__content p {
+    line-height: 23px;
+}
+
+.whatido__content svg {
+    color: #fdbb2e;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #fdbb2e;
+    text-align: center;
+    padding: 25px 10px 15px 10px;
+}
+
+#contact > h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#contact > p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacts h1 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.contacts div {
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contacts svg {
+    width: 48px;
+    height: 48px;
+    transition: .5s;
+    color: #191919;
+}
+
+.contacts svg:hover {
+    width: 56px;
+    height: 56px;
+}
+
+/* Skills */
+
+#skills {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+#skills h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px 0 35px 0;
+}
+
+#skills img {
+    margin-top: 10px;
+    width: 96px;
+    height: 96px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills__list p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.skills__list div {
+    padding: 0 10px;
+}
+
+@media (min-width: 720px) {
+    
+    /* Container header */
+
+    .header__container {
+        flex-direction: row;
+        gap: 4rem;
+        height: 75%;
+    }
+
+    .header__container div {
+        align-items: end;
+    }
+
+    .header__container img {
+        width: 40%;
+    }
+
+    .aboutme__resume .info {
+        grid-template-areas: 
+        "name email"
+        "phone bday"
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* Container header */
+
+    .header__container {
+        gap: 6rem;
+    }
+    .header__container img {
+        width: 25%;
+    }
+
+    .header__container h1 {
+        font-size: 2.4rem
+    }
+    .header__container h2 {
+        font-size: 4rem
+    }
+
+    .header__container p {
+        font-size: 1.2rem
+    }
+
+    .aboutme__resume {
+        flex-direction: row-reverse;
+    }
+
+    .aboutme__resume .resume {
+        text-align: right;
+        width: 70%;
+        margin-right: 75px;
+    }
+
+    .aboutme__resume .info {
+        width: 30%;
+        margin-left: 75px;
+    }
+
+    .skills__list {
+        max-width: 60%;
+        margin: 0 20%;
+    }
+
+}
