@@ -190,7 +190,7 @@ body {
 .socialnetwork {
     grid-area: snw;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -358,6 +358,8 @@ body {
         "name email"
         "phone bday"
     }
+
+    
 }
 
 @media (min-width: 1440px) {
@@ -400,6 +402,10 @@ body {
     .skills__list {
         max-width: 60%;
         margin: 0 20%;
+    }
+
+    .socialnetwork {
+        justify-content: end;
     }
 
 }
