@@ -302,8 +302,10 @@ body {
 
 #skills {
     text-align: center;
+    padding: 5px;
     padding-top: 50px;
     margin-bottom: 100px;
+    
 }
 
 #skills h1 {
